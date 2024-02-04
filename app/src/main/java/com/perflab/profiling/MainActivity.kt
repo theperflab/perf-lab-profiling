@@ -31,7 +31,11 @@ class MainActivity : ComponentActivity() {
 
 //        3. Advance Tracing
 //        -----------------------------
-        Debug.startMethodTracingSampling("sample-tracing-new", 1024 /*1KB*/ * 1024 /*1MB*/ * 8 /*8MB*/, 1000 /*1MS*/)
+        Debug.startMethodTracingSampling(
+            "sample-tracing-new",
+            1024 /*1KB*/ * 1024 /*1MB*/ * 8 /*8MB*/,
+            1000 /*1MS*/
+        )
         setContentView(R.layout.activity_main)
         Debug.stopMethodTracing()
     }
